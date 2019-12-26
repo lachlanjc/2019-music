@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import TopSongs from '../components/topsongs'
+import TopSongs from '../components/top-songs'
 
 export default () => {
   return (
