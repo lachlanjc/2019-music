@@ -1,5 +1,4 @@
 import React from 'react'
-import fetch from 'isomorphic-unfetch'
 import Head from 'next/head'
 import TopSongs from '../components/topsongs'
 
@@ -62,6 +61,7 @@ export default () => {
           margin: 0;
           background-color: var(--bg);
           color: var(--text);
+          text-align: center;
         }
       `}</style>
       <style jsx>{`

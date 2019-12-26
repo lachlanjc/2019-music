@@ -1,4 +1,4 @@
-import songs from '../topsongs.json'
+import songs from '../top-songs.json'
 
 export default () => (
   <ol>
@@ -31,10 +31,11 @@ export default () => (
         line-height: 1.375;
         background-color: var(--bg);
         color: var(--text);
-        scroll-snap-type: x mandatory;
-        overflow-x: auto;
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
         height: 100%;
-        max-height: 90vh;
+        max-height: 85vh;
+        text-align: left;
       }
       @media (prefers-color-scheme: dark) {
         ol {
@@ -50,7 +51,7 @@ export default () => (
         height: 80px;
         padding: 8px;
         overflow: hidden;
-        scroll-snap-align: left;
+        scroll-snap-align: start;
       }
       span {
         font-weight: bold;
