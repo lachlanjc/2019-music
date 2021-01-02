@@ -1,4 +1,3 @@
-import React from 'react'
 import Head from 'next/head'
 import Artist from '../components/artist'
 import Album from '../components/album'
@@ -46,13 +45,13 @@ const Page = () => (
           label="EP of the Year"
           name="Crystalline"
           artist="Bülow"
-          artwork="https://is5-ssl.mzstatic.com/image/thumb/Music113/v4/e2/1c/ac/e21cacac-ff21-2f31-a92d-9f43dda6cbf6/source/1024x1024bb.png"
+          artwork="https://is5-ssl.mzstatic.com/image/thumb/Music113/v4/e2/1c/ac/e21cacac-ff21-2f31-a92d-9f43dda6cbf6/source/512x512bb.png"
         />
         <Album
           label="Single of the Year"
           name="i’m so tired…"
           artist="Lauv & Troye Sivan"
-          artwork="https://is5-ssl.mzstatic.com/image/thumb/Music114/v4/05/c7/1b/05c71b41-8627-37a3-6fc4-0f1a2272a18c/source/1024x1024bb.png"
+          artwork="https://is5-ssl.mzstatic.com/image/thumb/Music114/v4/05/c7/1b/05c71b41-8627-37a3-6fc4-0f1a2272a18c/source/512x512bb.png"
         />
       </section>
     </article>

@@ -1,6 +1,8 @@
+import Image from 'next/image'
+
 export default ({ name, artwork }) => (
   <div>
-    <img src={artwork} width={128} alt={name} />
+    <Image src={artwork} width={128} height={128} alt={name} />
     <div>
       <strong>{name}</strong>
     </div>
@@ -8,10 +10,6 @@ export default ({ name, artwork }) => (
       div {
         display: flex;
         align-items: center;
-      }
-      @media (min-width: 32em) {
-        div {
-        }
       }
       img {
         width: 128px;

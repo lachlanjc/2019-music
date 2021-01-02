@@ -1,12 +1,15 @@
+import Image from 'next/image'
+
 export default ({ songs }) => (
   <ol>
     {songs.map((song, i) => (
       <li key={song.title}>
         <span>{i + 1}.</span>
         {song.artwork ? (
-          <img
+          <Image
             src={song.artwork.replace('512x512', '128x128')}
-            loading="lazy"
+            width={128}
+            height={128}
             alt={`${song.album} artwork`}
             className="artwork"
           />
