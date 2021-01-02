@@ -2,24 +2,19 @@ import Image from 'next/image'
 
 export default ({ name, artwork }) => (
   <div>
-    <Image src={artwork} width={256} height={256} alt={name} className="artwork" />
+    <Image src={artwork} width={256} height={256} alt={name} />
     <div>
       <strong>{name}</strong>
     </div>
     <style jsx>{`
       div {
-        display: flex;
+        display: grid;
+        grid-gap: 24px;
+        grid-template-columns: 128px 1fr;
         align-items: center;
       }
-      .artwork {
-        width: 128px;
-        height: 128px;
+      :global(img) {
         border-radius: 64px;
-      }
-      strong {
-        margin-left: 24px;
-        font-size: 24px;
-        display: block;
       }
     `}</style>
   </div>

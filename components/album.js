@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default ({ label, name, artwork, artist }) => (
   <section>
-    <Image src={artwork} width={256} height={256} alt={name} className="artwork" />
+    <Image src={artwork} width={256} height={256} alt={name} />
     <div>
       <span>{label}</span>
       <strong>{name}</strong>
@@ -10,13 +10,13 @@ export default ({ label, name, artwork, artist }) => (
     </div>
     <style jsx>{`
       section {
-        display: flex;
-        align-items: center;
         text-align: left;
+        display: grid;
+        grid-gap: 24px;
+        grid-template-columns: 128px 1fr;
+        align-items: center;
       }
-      .artwork {
-        width: 128px;
-        height: 128px;
+      :global(img) {
         border-radius: 4px;
       }
       div {
