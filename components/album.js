@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default ({ label, name, artwork, artist }) => (
   <section>
-    <Image src={artwork} width={512} height={512} alt={name} />
+    <Image src={artwork} width={256} height={256} alt={name} className="artwork" />
     <div>
       <span>{label}</span>
       <strong>{name}</strong>
@@ -14,7 +14,7 @@ export default ({ label, name, artwork, artist }) => (
         align-items: center;
         text-align: left;
       }
-      img {
+      .artwork {
         width: 128px;
         height: 128px;
         border-radius: 4px;

@@ -39,19 +39,19 @@ const Page = () => (
           label="Album of the Year"
           name="WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?"
           artist="Billie Eilish"
-          artwork="https://is5-ssl.mzstatic.com/image/thumb/Music114/v4/ff/4a/eb/ff4aeb7c-7f2d-1d18-d7cc-51c107c70bad/source/512x512bb.png"
+          artwork="https://is5-ssl.mzstatic.com/image/thumb/Music114/v4/ff/4a/eb/ff4aeb7c-7f2d-1d18-d7cc-51c107c70bad/source/256x256bb.png"
         />
         <Album
           label="EP of the Year"
           name="Crystalline"
           artist="Bülow"
-          artwork="https://is5-ssl.mzstatic.com/image/thumb/Music113/v4/e2/1c/ac/e21cacac-ff21-2f31-a92d-9f43dda6cbf6/source/512x512bb.png"
+          artwork="https://is5-ssl.mzstatic.com/image/thumb/Music113/v4/e2/1c/ac/e21cacac-ff21-2f31-a92d-9f43dda6cbf6/source/256x256bb.png"
         />
         <Album
           label="Single of the Year"
           name="i’m so tired…"
           artist="Lauv & Troye Sivan"
-          artwork="https://is5-ssl.mzstatic.com/image/thumb/Music114/v4/05/c7/1b/05c71b41-8627-37a3-6fc4-0f1a2272a18c/source/512x512bb.png"
+          artwork="https://is5-ssl.mzstatic.com/image/thumb/Music114/v4/05/c7/1b/05c71b41-8627-37a3-6fc4-0f1a2272a18c/source/256x256bb.png"
         />
       </section>
     </article>

@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default ({ name, artwork }) => (
   <div>
-    <Image src={artwork} width={128} height={128} alt={name} />
+    <Image src={artwork} width={256} height={256} alt={name} className="artwork" />
     <div>
       <strong>{name}</strong>
     </div>
@@ -11,7 +11,7 @@ export default ({ name, artwork }) => (
         display: flex;
         align-items: center;
       }
-      img {
+      .artwork {
         width: 128px;
         height: 128px;
         border-radius: 64px;
