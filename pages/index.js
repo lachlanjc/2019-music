@@ -1,5 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
+import Artist from '../components/artist'
+import Album from '../components/album'
 import TopSongs from '../components/top-songs'
 
 import topSongs from '../top-songs.json'
@@ -28,7 +30,29 @@ const Page = () => (
     </Head>
     <article>
       <h1>2019 in Music</h1>
+      <section className="columns">
+        <Artist
+          label="Best New Artist"
+          name="Conan Gray"
+          artwork="https://images.sk-static.com/images/media/img/col6/20190206-182210-650598.jpg"
         />
+        <Album
+          label="Album of the Year"
+          name="WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?"
+          artist="Billie Eilish"
+          artwork="https://is5-ssl.mzstatic.com/image/thumb/Music114/v4/ff/4a/eb/ff4aeb7c-7f2d-1d18-d7cc-51c107c70bad/source/512x512bb.png"
+        />
+        <Album
+          label="EP of the Year"
+          name="Crystalline"
+          artist="Bülow"
+          artwork="https://is5-ssl.mzstatic.com/image/thumb/Music113/v4/e2/1c/ac/e21cacac-ff21-2f31-a92d-9f43dda6cbf6/source/1024x1024bb.png"
+        />
+        <Album
+          label="Single of the Year"
+          name="i’m so tired…"
+          artist="Lauv & Troye Sivan"
+          artwork="https://is5-ssl.mzstatic.com/image/thumb/Music114/v4/05/c7/1b/05c71b41-8627-37a3-6fc4-0f1a2272a18c/source/1024x1024bb.png"
         />
       </section>
     </article>
@@ -120,6 +144,18 @@ const Page = () => (
         }
         nav a {
           margin-right: 1.5rem;
+        }
+
+        .columns {
+          display: grid;
+          grid-gap: 16px;
+        }
+
+        @media (min-width: 32em) {
+          .columns {
+            grid-gap: 24px;
+            grid-template-columns: repeat(2, 1fr);
+          }
         }
 
         .module {
