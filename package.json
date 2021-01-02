@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "npm run dev"
   },
-  "author": "Lachlan Campbell",
+  "author": "Lachlan Campbell (https://lachlanjc.com)",
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.17.20",

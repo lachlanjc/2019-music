@@ -13,6 +13,7 @@ export default ({ label, name, artwork }) => (
         grid-gap: 24px;
         grid-template-columns: 128px 1fr;
         align-items: center;
+        text-align: left;
       }
       section :global(img) {
         border-radius: 64px;
