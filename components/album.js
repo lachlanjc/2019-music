@@ -16,11 +16,8 @@ export default ({ label, name, artwork, artist }) => (
         grid-template-columns: 128px 1fr;
         align-items: center;
       }
-      :global(img) {
-        border-radius: 4px;
-      }
-      div {
-        margin-left: 24px;
+      section :global(img) {
+        border-radius: 8px;
       }
       strong {
         font-size: 24px;
@@ -29,8 +26,9 @@ export default ({ label, name, artwork, artist }) => (
         margin-top: 4px;
       }
       .label {
-        text-transform: uppercase;
         color: var(--quaternary);
+        font-weight: 500;
+        text-transform: uppercase;
       }
       span {
         display: block;
