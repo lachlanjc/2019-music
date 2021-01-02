@@ -4,7 +4,7 @@ export default ({ label, name, artwork, artist }) => (
   <section>
     <Image src={artwork} width={256} height={256} alt={name} />
     <div>
-      <span>{label}</span>
+      <span className="label">{label}</span>
       <strong>{name}</strong>
       <span>{artist}</span>
     </div>
@@ -23,10 +23,14 @@ export default ({ label, name, artwork, artist }) => (
         margin-left: 24px;
       }
       strong {
-        margin-top: 12px;
         font-size: 24px;
         line-height: 1.125;
         display: block;
+        margin-top: 4px;
+      }
+      .label {
+        text-transform: uppercase;
+        color: var(--quaternary);
       }
       span {
         display: block;

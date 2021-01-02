@@ -87,7 +87,7 @@ const Page = () => (
           box-sizing: border-box;
         }
         body {
-          font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+          font-family: ui-rounded, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
           line-height: 1.66;
           margin: 0;
           background-color: var(--bg);
@@ -128,7 +128,7 @@ const Page = () => (
 
       article {
         width: 100%;
-        max-width: 48rem;
+        max-width: 64rem;
         margin: auto;
         padding: 3rem 1rem;
       }
