@@ -1,6 +1,4 @@
-import songs from '../top-songs.json'
-
-export default () => (
+export default ({ songs }) => (
   <ol>
     {songs.map((song, i) => (
       <li key={song.title}>
@@ -13,12 +11,13 @@ export default () => (
             className="artwork"
           />
         ) : (
-          <div className="artwork" />
-        )}
+            <div className="artwork" />
+          )}
         <article>
           <strong>{song.title}</strong>
           <small>
-            {song.artist} – {song.album.replace(`${song.title} - `, '')}
+            {song.artist}{' – '}
+            {song.album.includes(' - Single') ? 'Single' : song.album}
           </small>
         </article>
       </li>

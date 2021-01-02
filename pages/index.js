@@ -2,35 +2,43 @@ import React from 'react'
 import Head from 'next/head'
 import TopSongs from '../components/top-songs'
 
-export default () => {
-  return (
-    <>
-      <Head>
-        <title>2019 in Music</title>
-        <meta property="twitter:card" content="summary" />
-        <meta property="twitter:site" content="@lachlanjc" />
-        <meta
-          property="twitter:description"
-          content="Find and contact your Congressional Representative."
+import topSongs from '../top-songs.json'
+
+const Page = () => (
+  <>
+    <Head>
+      <title>2019 in Music</title>
+      <meta property="twitter:card" content="summary" />
+      <meta property="twitter:site" content="@lachlanjc" />
+      <meta
+        property="twitter:description"
+        content="Lachlan Campbell’s top & favorite music of 2019."
+      />
+      <meta property="og:title" content="Find Your Rep" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://2019.lachlanjc.com/music" />
+      <meta
+        property="og:description"
+        content="Lachlan Campbell’s top & favorite music of 2019."
+      />
+      <meta
+        property="description"
+        content="Lachlan Campbell’s top & favorite music of 2019."
+      />
+    </Head>
+    <article>
+      <h1>2019 in Music</h1>
         />
-        <meta property="og:title" content="Find Your Rep" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://2019.lachlanjc.me/music" />
-        <meta
-          property="description"
-          content="Find and contact your Congressional Representative."
         />
-      </Head>
-      <article>
-        <h1>2019 in Music</h1>
-      </article>
-      <TopSongs />
-      <article>
-        <footer>
-          Made by <a href="https://lachlanjc.me">@lachlanjc</a>
-        </footer>
-      </article>
-      <style jsx global>{`
+      </section>
+    </article>
+    <TopSongs songs={topSongs} />
+    <article>
+      <footer>
+        Made by <a href="https://lachlanjc.com">@lachlanjc</a>, 2019
+      </footer>
+    </article>
+    <style jsx global>{`
         :root {
           --bg: #fff;
           --text: #111;
@@ -64,7 +72,7 @@ export default () => {
           text-align: center;
         }
       `}</style>
-      <style jsx>{`
+    <style jsx>{`
         h1 {
           line-height: 0.875;
           font-weight: 900;
@@ -152,6 +160,7 @@ export default () => {
           }
         }
       `}</style>
-    </>
-  )
-}
+  </>
+)
+
+export default Page
