@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default ({ songs }) => (
+const TopSongs = ({ songs }) => (
   <ol>
     {songs.map((song, i) => (
       <li key={song.title}>
@@ -14,12 +14,13 @@ export default ({ songs }) => (
             className="artwork"
           />
         ) : (
-            <div className="artwork" />
-          )}
+          <div className="artwork" />
+        )}
         <article>
           <strong>{song.title}</strong>
           <small>
-            {song.artist}{' – '}
+            {song.artist}
+            {' – '}
             {song.album.includes(' - Single') ? 'Single' : song.album}
           </small>
         </article>
@@ -83,3 +84,5 @@ export default ({ songs }) => (
     `}</style>
   </ol>
 )
+
+export default TopSongs

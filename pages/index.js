@@ -17,7 +17,7 @@ const Page = () => (
       />
       <meta property="og:title" content="Find Your Rep" />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://2019.lachlanjc.com/music" />
+      <meta property="og:url" content="https://2019-music.vercel.app/" />
       <meta
         property="og:description"
         content="Lachlan Campbell’s top & favorite music of 2019."
@@ -62,39 +62,40 @@ const Page = () => (
       </footer>
     </article>
     <style jsx global>{`
+      :root {
+        --bg: #fff;
+        --text: #111;
+        --pink: #ff365d;
+        --secondary: rgba(0, 0, 0, 0.875);
+        --tertiary: rgba(0, 0, 0, 0.75);
+        --quaternary: rgba(0, 0, 0, 0.5);
+        --divider: rgba(0, 0, 0, 0.125);
+        color-scheme: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
         :root {
-          --bg: #fff;
-          --text: #111;
+          --bg: #111;
+          --text: #fff;
           --pink: #ff365d;
-          --secondary: rgba(0, 0, 0, 0.875);
-          --tertiary: rgba(0, 0, 0, 0.75);
-          --quaternary: rgba(0, 0, 0, 0.5);
-          --divider: rgba(0, 0, 0, 0.125);
-          color-scheme: light dark;
+          --secondary: rgba(255, 255, 255, 0.875);
+          --tertiary: rgba(255, 255, 255, 0.75);
+          --quaternary: rgba(255, 255, 255, 0.5);
+          --divider: rgba(255, 255, 255, 0.125);
         }
-        @media (prefers-color-scheme: dark) {
-          :root {
-            --bg: #111;
-            --text: #fff;
-            --pink: #ff365d;
-            --secondary: rgba(255, 255, 255, 0.875);
-            --tertiary: rgba(255, 255, 255, 0.75);
-            --quaternary: rgba(255, 255, 255, 0.5);
-            --divider: rgba(255, 255, 255, 0.125);
-          }
-        }
-        * {
-          box-sizing: border-box;
-        }
-        body {
-          font-family: ui-rounded, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-          line-height: 1.66;
-          margin: 0;
-          background-color: var(--bg);
-          color: var(--text);
-          text-align: center;
-        }
-      `}</style>
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: ui-rounded, system-ui, -apple-system, BlinkMacSystemFont,
+          sans-serif;
+        line-height: 1.66;
+        margin: 0;
+        background-color: var(--bg);
+        color: var(--text);
+        text-align: center;
+      }
+    `}</style>
     <style jsx>{`
       h1 {
         line-height: 0.875;

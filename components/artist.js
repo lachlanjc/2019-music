@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default ({ label, name, artwork }) => (
+const Artist = ({ label, name, artwork }) => (
   <section>
     <Image src={artwork} width={256} height={256} alt={name} />
     <div>
@@ -31,3 +31,5 @@ export default ({ label, name, artwork }) => (
     `}</style>
   </section>
 )
+
+export default Artist
