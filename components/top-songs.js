@@ -12,6 +12,7 @@ const TopSongs = ({ songs }) => (
             height={128}
             alt={`${song.album} artwork`}
             className="artwork"
+            unoptimized
           />
         ) : (
           <div className="artwork" />
